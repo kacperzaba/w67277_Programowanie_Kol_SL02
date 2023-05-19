@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz</title>
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        width: 300px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 20px;
+    }
+
+    .control {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .actions {
+        justify-content: center;
+    }
+
+    .error {
+        color: #F00
+    }
+
+    .contactAddress input, .province input, .province select {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <form class="form" name="form" method="post" >
+        <div class="control">
+            <label>Imie</label>
+            <input type="text" name="name">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Email: </label>
+            <input type="text" name="email">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Hasło: </label>
+            <input type="password" name="password">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Potwórz Hasło: </label>
+            <input type="password" name="confirm-password">
+            <span class="error"></span>
+        </div>
+        <div class="control actions">
+            <input type="submit" value="Zapisz">
+        </div>
+        <!-- <table id="tabela">
+    
+            <label for="imie">Login:</label>
+            <input type="text" id="imie" name="imie" /><br /><br />
+            <label for="nazwisko">Email:</label>
+            <input type="text" id="nazwisko" name="nazwisko" /><br /><br />
+            <button onclick="dodajDoTabeli()">Dodaj do tabeli</button>
+            <br /><br />
+            <tbody id="tabela" ></tbody>
+            <tr>
+              <th>Login</th>
+              <th>Email</th>
+            </tr>
+          </table> -->
+        </form>
+    <script src="main.js"></script>
+</body>
+</html>

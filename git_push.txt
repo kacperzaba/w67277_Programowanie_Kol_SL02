@@ -1,0 +1,1 @@
+git push - przekazuje zawartość lokalnego repozytorium do zdalnego repozytorium, umożliwia przesłanie commitów z repozytorium lokalnego do zdalnego.
